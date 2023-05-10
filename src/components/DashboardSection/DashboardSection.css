@@ -1,0 +1,17 @@
+.dashboardSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dashBoardLeft{
+    flex: 1;
+    width: 20%;
+}
+.dashBoardCenter{
+    flex: 2;
+    width: 25%;
+}
+.dashBoardRight{
+    flex: 1;
+    width: 20%;
+}
