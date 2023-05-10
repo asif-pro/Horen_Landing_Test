@@ -156,7 +156,7 @@ function App() {
 <Animator animation={ZoomInScrollOut}>
       {/* <span style={{ fontSize: "40px" }}>I'm FadeUpScrollOut ✨</span> */}
       <LeaderBoard/>
-{/* <DashboardSection></DashboardSection> */}
+<DashboardSection></DashboardSection>
 </Animator>
 </ScrollPage>
 </ScrollContainer>
