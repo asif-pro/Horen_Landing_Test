@@ -6,7 +6,10 @@
 }
 
 .client-wrap{
-    width: 90vw;
+    width: 100vw;
+    padding-left: 10vw;
+    padding-right:10vw;
+    padding-top: 6vw;
     height: auto;
     text-align: center;
 }
@@ -33,13 +36,13 @@
 .client-in ul li{
     list-style: none;
     display: inline-block;
-    width: 150px;
-    height: 100px;
+    width: 180px;
+    height: 120px;
     position: relative;
     overflow: hidden;
     cursor: pointer;
     transition: 0.5s;
-    padding: 7px;
+    padding: 8px;
 }
 .client-in ul li img {
     width: 100%;

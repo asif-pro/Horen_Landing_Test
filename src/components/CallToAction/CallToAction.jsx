@@ -9,7 +9,7 @@ const CallToAction = () => {
       <div class="line-heading">
         <div class="line-heading-left">
           <h2>Say hello to us</h2>
-          <button className='call_btn'><h4>Talk to us</h4> </button>
+          <button className='call_btn'><h4 className='call_btn'>Talk to us</h4> </button>
           
         </div>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.

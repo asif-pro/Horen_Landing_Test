@@ -1,16 +1,19 @@
 import React from 'react'
 import './Logoo.css'
 import HeroImage from '../Assets/hero.png'
-import Burger from '../Assets/Burger.png'
-import Mercedes from '../Assets/Mercedes.png'
-import Moviestar from '../Assets/Movistar.png'
-import Nike from '../Assets/NKE.png'
-import Pizza from '../Assets/pizza.png'
 import XSeries from '../Assets/x-series.png'
 import Rover from '../Assets/Rover.png'
 import Range from '../Assets/Range.png'
 import Selise from '../Assets/SELISE.png'
+import SeliseR from '../Assets/SELISE-modified.png'
 import Project from '../Assets/PCode.png'
+import ProjectR from '../Assets/PCode-modified.png'
+import Snapdrop from '../Assets/snapdrop_logo.png'
+import SnapdropR from '../Assets/snapdrop_logo-modified.png'
+import Flyaway from '../Assets/logo-flyaway.png'
+import FlyawayR from '../Assets/logo-flyaway-modified.png'
+import Hilti from '../Assets/logo_2016_sRGB.png'
+import HiltiR from '../Assets/logo_2016_sRGB-modified.png'
 
 
 const Logoo = () => {
@@ -18,67 +21,54 @@ const Logoo = () => {
     <>
         <div className='client-wrap'>
             <h2>
-                Our Clients
+                Our Partners
             </h2>
             <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque et neque id ligula mattis commodo.</p>
             <hr/>
              <div className='client-in'>
                 <ul>
-                    {/* <li>
-                        <img src={Burger} />
-                        <img src={Burger} />
+                <li>
+                        <img src={FlyawayR} />
+                        <img src={Flyaway} />
                     </li>
                     <li>
-                        <img src={Mercedes} />
-                        <img src={Mercedes} />
-                    </li>
-                    <li>
-                        <img src={Moviestar} />
-                        <img src={Moviestar} />
-                    </li>
-                    <li>
-                        <img src={Nike} />
-                        <img src={Nike} />
-                    </li> */}
-                    <li>
-                        <img src={Project} />
+                        <img src={ProjectR} />
                         <img src={Project} />
                     </li>
                     <li>
-                        <img src={Selise} />
+                        <img src={SeliseR} />
                         <img src={Selise} />
                     </li>
                     <li>
                         <img src={XSeries} />
                         <img src={XSeries} />
+                    </li>
+                    
+                    <li>
+                        <img src={SnapdropR} />
+                        <img src={Snapdrop} />
+                    </li>
+                    
+                    
+                    <li>
+                        <img src={ProjectR} />
+                        <img src={Project} />
                     </li>
                     <li>
                         <img src={Rover} />
                         <img src={Range} />
                     </li>
                     <li>
-                        <img src={Pizza} />
-                        <img src={Pizza} />
+                        <img src={ProjectR} />
+                        <img src={Project} />
                     </li>
                     <li>
-                        <img src={HeroImage} />
-                        <img src={HeroImage} />
+                        <img src={HiltiR} />
+                        <img src={Hilti} />
                     </li>
                     <li>
-                        <img src={HeroImage} />
-                        <img src={HeroImage} />
-                    </li>
-                    <li>
-                        <img src={HeroImage} />
-                        <img src={HeroImage} />
-                    </li>
-                    <li>
-                        <img src={HeroImage} />
-                        <img src={HeroImage} />
-                    </li>
-                    <li>
-                        <img src={HeroImage} />
-                        <img src={HeroImage} />
+                        <img src={SeliseR} />
+                        <img src={Selise} />
                     </li>
                 </ul>
              </div>

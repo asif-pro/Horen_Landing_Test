@@ -1,10 +1,12 @@
 .mapSectionContainer{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    max-width: 90vw;
 }
 .map_visual{
     flex-grow: 3;
+    margin-left: 10vw;
 }
 .map_info{
     flex-grow: 1;
@@ -13,6 +15,9 @@
     text-align: left;
     padding-left: 3%;
     font-size: 272%;
+}
+.mapboxgl-ctrl{
+  display: none !important;
 }
 
 

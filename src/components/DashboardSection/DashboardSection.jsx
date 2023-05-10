@@ -4,7 +4,7 @@ import DashUI from '../Assets/DashUI.png'
 import Seli from '../Assets/SELISE.png'
 import Pcode from '../Assets/PCode.png'
 import Card from './Cards/Card.jsx'
-import Phone from '../Assets/phone.gif'
+// import Phone from '../Assets/phone.gif'
 
 const DashboardSection = () => {
   return (
@@ -23,7 +23,7 @@ const DashboardSection = () => {
 
         <div className='dashBoardRight'>
         <div className='dashBoardRightTop'>
-        <Card><img src={Phone} /></Card>
+        <Card><img /></Card>
         </div>
         <div className='dashBoardRightBottom'>
         <Card></Card>

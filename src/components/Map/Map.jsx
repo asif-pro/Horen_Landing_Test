@@ -11,20 +11,6 @@ const mapBox_Token = 'pk.eyJ1IjoiYXNpZmluZXIiLCJhIjoiY2xoZzN5d21pMDBqbTNlcWpxbjd
 const Map = () => {
 
     const [allLocations, setAllLocations] = React.useState(MapData)
-    // setAllLocations(MapData)
-
-    // allLocations.features[0].geometry.coordinates[1]
-    // console.log('all',allLocations[0].latitude)
-    // console.log('all',allLocations)
-
-    
-
-    //Initial view_port
-    // const [viewPort, setViewPort] = React.useState({
-    //     latitude: 23.8103,
-    //     longitude: 90.4125,
-    //     zoom: 1,
-    // })
 
   return (
     <div className='mapSectionContainer'>

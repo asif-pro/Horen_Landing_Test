@@ -1,6 +1,6 @@
 import React from 'react'
 import './Card.css'
-import Phone from '../../Assets/phone.gif'
+// import Phone from '../../Assets/phone.gif'
 
 const Card = () => {
   return (

@@ -13,13 +13,15 @@ import Logoo from './components/Logo/Logoo';
 import Logo from './components/Logo/Logo';
 import DashboardSection from './components/DashboardSection/DashboardSection';
 import yellowDashboard from './components/Assets/dashboard-yellow.json'
+import mobileNotification from './components/Assets/mobile-notification.json'
 import Lottie from 'react-lottie';
 import CallToAction from './components/CallToAction/CallToAction';
 import LeaderBoard from './components/LeaderBoard/LeaderBoard';
 import Map from './components/Map/Map';
+import Footer from '../src/components/Footer/Footer'
 function App() {
 
-  const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
+  const ZoomInScrollOut = batch(StickyIn(), FadeIn(-2), ZoomIn());
   const FadeUp = batch(Fade(), Move(), Sticky());
 
 
@@ -88,19 +90,17 @@ function App() {
           <Animator animation={MoveIn(1000, 0)}>
             
           <Lottie 
-	      options={{
-          loop: true,
-          autoplay: true,
-          animationData: yellowDashboard,
-          rendererSettings: {
-            preserveAspectRatio: "xMidYMid slice"
-          }
-      }}
-        height={200}
-        width={300}
-        
-      />
-          
+              options={{
+                loop: true,
+                autoplay: true,
+                animationData: yellowDashboard,
+                rendererSettings: {
+                  preserveAspectRatio: "xMidYMid slice"
+                }
+            }}
+              height={200}
+              width={300}
+            />
           </Animator>
         </span>
         <span > 
@@ -115,7 +115,21 @@ function App() {
             </p>
           </Animator>
 
-          <Animator animation={MoveOut(-1000, 0)}>See you 💛</Animator>
+          <Animator animation={MoveOut(-1000, 0)}>
+          <Lottie 
+              options={{
+                loop: true,
+                autoplay: true,
+                animationData: mobileNotification,
+                rendererSettings: {
+                  preserveAspectRatio: "xMidYMid slice"
+                }
+            }}
+              height={200}
+              width={300}
+              
+            />
+          </Animator>
           </span>
        
       
@@ -123,13 +137,11 @@ function App() {
     </div>
   </ScrollPage>
 
-  <ScrollPage>
-  <Animator animation={ZoomInScrollOut}>
+ 
         {/* <span style={{ fontSize: "40px" }}>I'm FadeUpScrollOut ✨</span> */}
     {/* <LeaderBoard/> */}
     <DashboardSection></DashboardSection>
-  </Animator>
-</ScrollPage>
+  
 
   <ScrollPage>
   
@@ -163,12 +175,13 @@ function App() {
   <Animator animation={ZoomInScrollOut}>
         {/* <span style={{ fontSize: "40px" }}>I'm FadeUpScrollOut ✨</span> */}
     <LeaderBoard/>
-    <CallToAction></CallToAction>
+    
     {/* <DashboardSection></DashboardSection> */}
   </Animator>
 </ScrollPage>
   <ScrollPage>
     <Animator animation={batch(FadeIn(-1), Sticky())}>
+    <CallToAction></CallToAction>
       <Logoo></Logoo>
     </Animator>
   </ScrollPage>
@@ -179,7 +192,7 @@ function App() {
 
 
     </div>
-  
+  <Footer></Footer>
 
     </>
   );
