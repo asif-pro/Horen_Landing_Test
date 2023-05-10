@@ -145,7 +145,7 @@ function App() {
       <span style={{ fontSize: "40px" }}>
         <Animator animation={MoveIn(-1000, 0)}>Hello Guys 👋🏻</Animator>
         <Animator animation={MoveIn(1000, 0)}>Nice to meet you 🙋🏻‍♀️</Animator>
-        <img src='https://res.cloudinary.com/dsuiwxwkg/image/upload/v1683716199/Screenshot_2023-05-09_at_9.34.55_am_k6jh55.png'/>
+        <img src='https://res.cloudinary.com/dsuiwxwkg/image/upload/v1683716645/DashUI.124a39e8bad92ff61fd5_g9cdv1.png'/>
         <Animator animation={MoveOut(1000, 0)}>Good bye ✋🏻</Animator>
         <Animator animation={MoveOut(-1000, 0)}>See you 💛</Animator>
       </span>
