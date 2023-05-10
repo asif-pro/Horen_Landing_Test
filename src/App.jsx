@@ -21,7 +21,7 @@ import Map from './components/Map/Map';
 import Footer from '../src/components/Footer/Footer'
 function App() {
 
-  const ZoomInScrollOut = batch(StickyIn(), FadeIn(-2), ZoomIn());
+  const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
   const FadeUp = batch(Fade(), Move(), Sticky());
 
 
@@ -140,7 +140,17 @@ function App() {
  
         {/* <span style={{ fontSize: "40px" }}>I'm FadeUpScrollOut ✨</span> */}
     {/* <LeaderBoard/> */}
-    <DashboardSection></DashboardSection>
+    <ScrollPage>
+    <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }} >
+      <span style={{ fontSize: "40px" }}>
+        <Animator animation={MoveIn(-1000, 0)}>Hello Guys 👋🏻</Animator>
+        <Animator animation={MoveIn(1000, 0)}>Nice to meet you 🙋🏻‍♀️</Animator>
+        <img src='https://res.cloudinary.com/dsuiwxwkg/image/upload/v1683716199/Screenshot_2023-05-09_at_9.34.55_am_k6jh55.png'/>
+        <Animator animation={MoveOut(1000, 0)}>Good bye ✋🏻</Animator>
+        <Animator animation={MoveOut(-1000, 0)}>See you 💛</Animator>
+      </span>
+    </div>
+  </ScrollPage>
   
 
   <ScrollPage>
