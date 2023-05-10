@@ -233,6 +233,7 @@
       }
   }
   .leaderBoardContainer{
+    padding-top: 150px;
     width:90vw;
     display: flex;
     justify-content: space-between;

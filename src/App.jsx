@@ -73,6 +73,7 @@ function App() {
   </div>
     </Animator>
   </ScrollPage>
+  
   <ScrollPage>
     <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }} >
       <span >
@@ -121,6 +122,22 @@ function App() {
       </span>
     </div>
   </ScrollPage>
+
+  <ScrollPage>
+  <Animator animation={ZoomInScrollOut}>
+        {/* <span style={{ fontSize: "40px" }}>I'm FadeUpScrollOut ✨</span> */}
+    {/* <LeaderBoard/> */}
+    <DashboardSection></DashboardSection>
+  </Animator>
+</ScrollPage>
+
+  <ScrollPage>
+  
+        {/* <span style={{ fontSize: "40px" }}>I'm FadeUpScrollOut ✨</span> */}
+    <Map></Map>
+    {/* <DashboardSection></DashboardSection> */}
+  
+</ScrollPage>
   
   {/* <ScrollPage>
     <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -900))}>
@@ -141,31 +158,26 @@ function App() {
     </Animator>
   </ScrollPage> */}
 
-  <ScrollPage>
-    <Animator animation={batch(FadeIn(-1), Sticky())}>
-      {/* <span style={{ fontSize: "40px" }}>Done</span> */}
-      <br/>
-      {/* <span style={{ fontSize: "30px" }}>
-        There's FadeAnimation, MoveAnimation, StickyAnimation, ZoomAnimation
-      </span> */}
-<Logoo></Logoo>
-    </Animator>
-  </ScrollPage>
 
   <ScrollPage>
-<Animator animation={ZoomInScrollOut}>
-      {/* <span style={{ fontSize: "40px" }}>I'm FadeUpScrollOut ✨</span> */}
-      <LeaderBoard/>
-<DashboardSection></DashboardSection>
-</Animator>
+  <Animator animation={ZoomInScrollOut}>
+        {/* <span style={{ fontSize: "40px" }}>I'm FadeUpScrollOut ✨</span> */}
+    <LeaderBoard/>
+    <CallToAction></CallToAction>
+    {/* <DashboardSection></DashboardSection> */}
+  </Animator>
 </ScrollPage>
+  <ScrollPage>
+    <Animator animation={batch(FadeIn(-1), Sticky())}>
+      <Logoo></Logoo>
+    </Animator>
+  </ScrollPage>
 </ScrollContainer>
 
 {/* <CircularCarousel></CircularCarousel> */}
 {/* <Logo></Logo> */}
 
-<CallToAction></CallToAction>
-    <Map></Map>
+
     </div>
   
 
