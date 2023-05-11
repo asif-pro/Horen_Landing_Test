@@ -60,7 +60,8 @@
     grid-area: right-item;
   }
   .heroImage img {
-    margin : 0 auto
+    margin : 0 auto;
+    margin-top:2vh;
   }
   h1 {
     font-size: calc(80px + 0.390625vw);

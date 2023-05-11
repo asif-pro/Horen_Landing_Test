@@ -44,7 +44,7 @@ const Map = () => {
         }) }
         </ReactMapGL>
         </div>
-        <div className='map_info'><span>Join us to<br/> Reduce these </span><span style={{marginLeft:15}} className='pin'></span></div>
+        <div className='map_info'><span>Join us in<br/> reducing these </span><span style={{marginLeft:15}} className='pin'></span></div>
         
     </div>
     

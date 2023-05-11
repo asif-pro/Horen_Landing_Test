@@ -28,8 +28,8 @@ const Logoo = () => {
              <div className='client-in'>
                 <ul>
                 <li>
-                        <img src={FlyawayR} />
-                        <img src={Flyaway} />
+                        <img src={Rover} />
+                        <img src={Range} />
                     </li>
                     <li>
                         <img src={ProjectR} />
@@ -54,7 +54,7 @@ const Logoo = () => {
                         <img src={ProjectR} />
                         <img src={Project} />
                     </li>
-                    <li>
+                    {/* <li>
                         <img src={Rover} />
                         <img src={Range} />
                     </li>
@@ -69,7 +69,7 @@ const Logoo = () => {
                     <li>
                         <img src={SeliseR} />
                         <img src={Selise} />
-                    </li>
+                    </li> */}
                 </ul>
              </div>
         </div>

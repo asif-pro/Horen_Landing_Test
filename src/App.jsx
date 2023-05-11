@@ -24,7 +24,6 @@ function App() {
   const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
   const FadeUp = batch(Fade(), Move(), Sticky());
 
-
   const Spin = (cycle) =>
   ({
     in: {
@@ -109,7 +108,7 @@ function App() {
         <span style={{display:"flex",justifyContent:"center"}}>
        
           <Animator animation={MoveOut(1000, 0)}>
-          <p  className="talk-bubble tri-right border round btm-left-in" 
+          <p  className="talk-bubble tri-right border round top-left-in" 
           style={{position:"relative",marginLeft:"10vw", minWidth:"15vw",fontSize:"20px",wordWrap:"break-word"}}>
                  Make better noise decisions using an analytics dashboard and mobile app 
             </p>
@@ -140,23 +139,33 @@ function App() {
  
         {/* <span style={{ fontSize: "40px" }}>I'm FadeUpScrollOut ✨</span> */}
     {/* <LeaderBoard/> */}
+    
     <ScrollPage>
-    <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }} >
+    <Animator animation={batch(FadeIn())}>
+      <DashboardSection/>
+      </Animator>
+    {/* <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }} >
       <span style={{ fontSize: "40px" }}>
-        <Animator animation={MoveIn(-1000, 0)}>Hello Guys 👋🏻</Animator>
-        <Animator animation={MoveIn(1000, 0)}>Nice to meet you 🙋🏻‍♀️</Animator>
-        <img src='https://res.cloudinary.com/dsuiwxwkg/image/upload/v1683716645/DashUI.124a39e8bad92ff61fd5_g9cdv1.png'/>
-        <Animator animation={MoveOut(1000, 0)}>Good bye ✋🏻</Animator>
-        <Animator animation={MoveOut(-1000, 0)}>See you 💛</Animator>
+        <Animator animation={MoveIn(-1000, 0)}>
+          Fleet Noise Tracking
+          <img style={{marginLeft:"20px"}} height="35px" width="35px" src="https://res.cloudinary.com/dsuiwxwkg/image/upload/v1683728840/fleet_rnnahf.png" alt="" />
+        </Animator>
+        <Animator animation={MoveIn(1000, 0)}>Country wide comparison</Animator>
+
+        <img  src='https://res.cloudinary.com/dsuiwxwkg/image/upload/v1683727768/DashUI.124a39e8bad92ff61fd5_ewla01.jpg'/>
+        <Animator animation={MoveOut(1000, 0)}>Incentive based games</Animator>
+        <Animator animation={MoveOut(-1000, 0)}>Push Notification💛</Animator>
       </span>
-    </div>
+    </div> */}
   </ScrollPage>
   
 
   <ScrollPage>
   
         {/* <span style={{ fontSize: "40px" }}>I'm FadeUpScrollOut ✨</span> */}
+        <Animator animation={batch(FadeOut())}>
     <Map></Map>
+    </Animator>
     {/* <DashboardSection></DashboardSection> */}
   
 </ScrollPage>
@@ -190,19 +199,20 @@ function App() {
   </Animator>
 </ScrollPage>
   <ScrollPage>
-    <Animator animation={batch(FadeIn(-1), Sticky())}>
+    <Animator animation={batch(FadeIn(), Sticky())}>
     <CallToAction></CallToAction>
       <Logoo></Logoo>
+     
     </Animator>
   </ScrollPage>
 </ScrollContainer>
-
+<Footer></Footer>
 {/* <CircularCarousel></CircularCarousel> */}
 {/* <Logo></Logo> */}
 
 
     </div>
-  <Footer></Footer>
+
 
     </>
   );
