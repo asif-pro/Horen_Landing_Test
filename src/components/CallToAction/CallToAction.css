@@ -38,19 +38,24 @@
     margin: 0;
     padding: 0;
 }
+.line-heading-right {
+    text-align: left!important;
+    margin: 0;
+    padding: 0;
+}
 .line-heading-left h2 {
     color: #F7CF47;
     font-size: 2.625rem;
     font-weight: bold;
     line-height: 1.1;
     vertical-align: baseline;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 10px;
 }
 .line-heading-left h4 {
     font-size: 1.75rem;
     font-weight: 300;
-  color: #F7CF47;
+    color: #F7CF47;
     line-height: 1.1;
     vertical-align: baseline;
     margin: 0;
@@ -62,7 +67,7 @@
     margin-left: 38px;
     margin-top: 0;
     border-left: 3px solid #F7CF47;
-    padding: 12px 0 12px 30px;
+    padding: 12px 30px 12px 30px;
     line-height: 24px;
     -webkit-box-flex: 1;
     flex: 1;
@@ -74,7 +79,9 @@
 .call_btn{
     border-style: solid;
     border-color: #F7CF47;
-    margin-top: 25px;
+    font-size: 3rem;
+    color: #F7CF47;
+
 }
 .call_btn:hover{
     color: #0a0a0a;
@@ -82,4 +89,7 @@
 }
 h4:hover{
     color: black;
+}
+img{
+    margin:0 1vw 0 1vw
 }

@@ -8,12 +8,20 @@ const CallToAction = () => {
     <div class="background-cover container">
       <div class="line-heading">
         <div class="line-heading-left">
-          <h2>Say hello to us</h2>
-          <button className='call_btn'><h4 className='call_btn'>Talk to us</h4> </button>
+          <h2>Get on-board </h2>
+          
           
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-          Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
+        <p style={{display:"flex",alignItems:"center",justifyContent:"space-between",fontSize:"26px"}}>
+          Place Order 
+            <img src="https://res.cloudinary.com/dsuiwxwkg/image/upload/v1684230538/icons8-wide-left-arrow-64_1_vmduuz.png" alt="" />
+          Install Device
+            <img src="https://res.cloudinary.com/dsuiwxwkg/image/upload/v1684230538/icons8-wide-left-arrow-64_1_vmduuz.png" alt="" />
+          Become Noise Conscious  
+          <img src="https://res.cloudinary.com/dsuiwxwkg/image/upload/v1684230538/icons8-wide-left-arrow-64_1_vmduuz.png" alt="" />
+          <button className='call_btn'><h4 className='call_btn'>Start</h4> </button>
+
+        </p>
       </div>
     </div>
   </div>
