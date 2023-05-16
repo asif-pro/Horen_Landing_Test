@@ -163,9 +163,9 @@ function App() {
   <ScrollPage>
   
         {/* <span style={{ fontSize: "40px" }}>I'm FadeUpScrollOut ✨</span> */}
-        <Animator animation={batch(FadeOut())}>
+        {/* <Animator animation={batch(FadeOut())}> */}
     <Map></Map>
-    </Animator>
+    {/* </Animator> */}
     {/* <DashboardSection></DashboardSection> */}
   
 </ScrollPage>
