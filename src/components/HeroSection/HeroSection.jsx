@@ -7,8 +7,8 @@ const HeroSection = () => {
   <>
     <div class="hero">
   <div class="content">
-    <span>Are You</span>
-    <h1>Are You<br/> Noise Conscious ?</h1>
+    {/* <span>Are You</span> */}
+    <h1 className='hero_title'>Are You<br/> Noise Conscious ?</h1>
     <button className='hero-cta' type="button">Take a Tour</button>
   </div>
   {/* <div >

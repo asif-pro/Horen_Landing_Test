@@ -18,30 +18,30 @@ const LeaderBoard = () => {
 <table>
   <tr>
     <td class="number">1</td>
-    <td class="name">Lee Taeyong</td>
+    <td class="name">Mr. John</td>
     <td class="points">
-      258.244 <img class="gold-medal" src="https://github.com/malunaridev/Challenges-iCodeThis/blob/master/4-leaderboard/assets/gold-medal.png?raw=true" alt="gold medal"/>
+      121 <img class="gold-medal" src="https://github.com/malunaridev/Challenges-iCodeThis/blob/master/4-leaderboard/assets/gold-medal.png?raw=true" alt="gold medal"/>
     </td>
   </tr>
   <tr>
     <td class="number">2</td>
     <td class="name">Mark Lee</td>
-    <td class="points">258.242</td>
+    <td class="points">128</td>
   </tr>
   <tr>
     <td class="number">3</td>
-    <td class="name">Xiao Dejun</td>
-    <td class="points">258.223</td>
+    <td class="name">Atik Kamal</td>
+    <td class="points">187</td>
   </tr>
   <tr>
     <td class="number">4</td>
-    <td class="name">Qian Kun</td>
-    <td class="points">258.212</td>
+    <td class="name">Sara Limkova</td>
+    <td class="points">243</td>
   </tr>
   <tr>
     <td class="number">5</td>
     <td class="name">Johnny Suh</td>
-    <td class="points">258.208</td>
+    <td class="points">258</td>
   </tr>
 </table>
 {/* <div id="buttons">
@@ -62,30 +62,30 @@ const LeaderBoard = () => {
 <table>
   <tr>
     <td class="number">1</td>
-    <td class="name">Lee Taeyong</td>
+    <td class="name">Project Code</td>
     <td class="points">
-      258.244 <img class="gold-medal" src="https://github.com/malunaridev/Challenges-iCodeThis/blob/master/4-leaderboard/assets/gold-medal.png?raw=true" alt="gold medal"/>
+      238 <img class="gold-medal" src="https://github.com/malunaridev/Challenges-iCodeThis/blob/master/4-leaderboard/assets/gold-medal.png?raw=true" alt="gold medal"/>
     </td>
   </tr>
   <tr>
     <td class="number">2</td>
-    <td class="name">Mark Lee</td>
-    <td class="points">258.242</td>
+    <td class="name">SELISE</td>
+    <td class="points">258</td>
   </tr>
   <tr>
     <td class="number">3</td>
-    <td class="name">Xiao Dejun</td>
-    <td class="points">258.223</td>
+    <td class="name">Digital Bridge</td>
+    <td class="points">292</td>
   </tr>
   <tr>
     <td class="number">4</td>
-    <td class="name">Qian Kun</td>
-    <td class="points">258.212</td>
+    <td class="name">Samsung</td>
+    <td class="points">328</td>
   </tr>
   <tr>
     <td class="number">5</td>
-    <td class="name">Johnny Suh</td>
-    <td class="points">258.208</td>
+    <td class="name">Microsoft</td>
+    <td class="points">378</td>
   </tr>
 </table>
 {/* <div id="buttons">
