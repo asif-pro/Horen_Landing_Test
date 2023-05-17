@@ -59,7 +59,7 @@ function App() {
             <p  className="talk-bubble tri-right border round btm-right-in"
             style={{position:"relative",marginRight:"10vw", maxWidth:"15vw",fontSize:"20px",wordWrap:"break-word"}}
              >
-                Horen is a platform that allows you to track your noise footprint
+                Our 360 degree solution for noise pollution in Dhaka
             </p>
           </Animator>
           <Animator animation={MoveIn(1000, 0)}>
