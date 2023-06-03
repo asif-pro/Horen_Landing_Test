@@ -46,11 +46,12 @@
     transform: translateY(-50%);
     z-index: 2;
     grid-area : left-item;
-    margin-left: 10vw;
+    margin-left: 1vw;
   }
   .heroImage {
     display: flex;
     justify-content: center;
+    align-items: center;
     color: #000000;
     position: absolute;
     top: 50%;

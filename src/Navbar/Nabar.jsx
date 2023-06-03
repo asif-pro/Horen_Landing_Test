@@ -14,9 +14,7 @@ const Nabar = () => {
     {/* <!-- Navbar Links --> */}
      <ul id="menu">
         <li><a href="#home">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#services">Live Dashboard</a></li>
         <button className='signupBtn' type="button">Sign Up</button>
      </ul>
   </div>
@@ -32,9 +30,7 @@ const Nabar = () => {
     <div class="overlay-menu">
     <ul id="menu">
         <li><a href="#home">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#services">Live Dashboard</a></li>
         </ul>
     </div>
     </>

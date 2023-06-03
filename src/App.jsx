@@ -19,30 +19,17 @@ import CallToAction from './components/CallToAction/CallToAction';
 import LeaderBoard from './components/LeaderBoard/LeaderBoard';
 import Map from './components/Map/Map';
 import Footer from '../src/components/Footer/Footer'
-function App() {
+import { useRef } from 'react';
 
+function App() {
+ const ref = useRef();
   const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
   const FadeUp = batch(Fade(), Move(), Sticky());
 
-  const Spin = (cycle) =>
-  ({
-    in: {
-      style: {
-        // `p` is number (0~1)
-        // When just before this page appear, `p` will be 0
-        // When this page filled your screen, `p` will be 1
-        transform: (p) => `rotate(${p * 360 * cycle}deg)`,
-      },
-    },
-    out: {
-      style: {
-        // `p` is number (0~1)
-        // When this page filled your screen, `p` will be 0
-        // When just after this page disappear, `p` will be 1
-        transform: (p) => `rotate(${p * 360 * cycle}deg)`,
-      },
-    },
-  });
+  const handleClick = () => {
+    console.log('inside handle click')
+    ref.current?.scrollIntoView({behavior: 'smooth'});
+  };
 
   return (
     <>
@@ -50,33 +37,22 @@ function App() {
     <div className="App">
     <Navbar></Navbar>
     
-    <ScrollContainer>
-
-    {/* //Spinnnig  */}
-    {/* <ScrollPage>
-    // Your custom animation also can be batched!
-    <Animator animation={batch(Sticky(), Fade(), Spin(3))}>
-      <h1 style={{ fontSize: 50 }}>Hello!!!</h1>
-    </Animator>
-  </ScrollPage>
-  <ScrollPage>
-    ...
-  </ScrollPage> */}
+<ScrollContainer>
 
   <ScrollPage>
     <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -900))}>
   <div style={{width:'100vw', height:'100vh'}}>
   <div>
-  <HeroSection></HeroSection>
-      {/* <span style={{ fontSize: "30px", color: "white" }}>Let me show you scroll animation 😀</span> */}
+  <HeroSection handleTakeATour = {handleClick}></HeroSection>
+
       </div>
-  {/* <Particle></Particle> */}
+
   </div>
     </Animator>
   </ScrollPage>
   
   <ScrollPage>
-    <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }} >
+    <div ref={ref} style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }} >
       <span >
         <span style={{display:"flex",justifyContent:"center"}}>
           <Animator animation={MoveIn(-1000, 0)}>
@@ -135,10 +111,6 @@ function App() {
       </span>
     </div>
   </ScrollPage>
-
- 
-        {/* <span style={{ fontSize: "40px" }}>I'm FadeUpScrollOut ✨</span> */}
-    {/* <LeaderBoard/> */}
     
     <ScrollPage>
     <Animator animation={batch(FadeIn())}>
@@ -163,33 +135,13 @@ function App() {
   <ScrollPage>
   
         {/* <span style={{ fontSize: "40px" }}>I'm FadeUpScrollOut ✨</span> */}
-        <Animator animation={batch(FadeOut())}>
+        {/* <Animator animation={batch(FadeOut())}> */}
     <Map></Map>
-    </Animator>
+    {/* </Animator> */}
     {/* <DashboardSection></DashboardSection> */}
   
 </ScrollPage>
   
-  {/* <ScrollPage>
-    <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -900))}>
-  <div>
-      <span style={{ fontSize: "30px"}}>Let me show you scroll animation 😀</span>
-      </div>
-    </Animator>
-  </ScrollPage> */}
-  {/* <ScrollPage>
-    <Animator animation={ZoomInScrollOut}>
-      <span style={{ fontSize: "40px" }}>I'm FadeUpScrollOut ✨</span>
-    </Animator>
-  </ScrollPage> */}
-  
-  {/* <ScrollPage>
-    <Animator animation={FadeUp}>
-      <span style={{ fontSize: "40px" }}>I'm FadeUp ⛅️</span>
-    </Animator>
-  </ScrollPage> */}
-
-
   <ScrollPage>
   <Animator animation={ZoomInScrollOut}>
         {/* <span style={{ fontSize: "40px" }}>I'm FadeUpScrollOut ✨</span> */}
@@ -198,6 +150,7 @@ function App() {
     {/* <DashboardSection></DashboardSection> */}
   </Animator>
 </ScrollPage>
+ 
   <ScrollPage>
     <Animator animation={batch(FadeIn(), Sticky())}>
     <CallToAction></CallToAction>
@@ -205,6 +158,7 @@ function App() {
      
     </Animator>
   </ScrollPage>
+
 </ScrollContainer>
 <Footer></Footer>
 {/* <CircularCarousel></CircularCarousel> */}
