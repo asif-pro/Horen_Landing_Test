@@ -21,7 +21,7 @@ const Map = () => {
             longitude: 90.3563,
             // latitude: -76.92812,
             // longitude: 38.97863,
-            zoom: 10,
+            zoom: 5,
         }}
         mapboxAccessToken = {mapBox_Token}
         width = '100%'

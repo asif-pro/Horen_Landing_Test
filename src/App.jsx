@@ -19,12 +19,56 @@ import CallToAction from './components/CallToAction/CallToAction';
 import LeaderBoard from './components/LeaderBoard/LeaderBoard';
 import Map from './components/Map/Map';
 import Footer from '../src/components/Footer/Footer'
+import BarChart from './components/Charts/BarChart/BarChart';
+import PieChart from './components/Charts/PieChart/PieChart';
 import { useRef } from 'react';
-
+import PolarChart from './components/Charts/PolarChart/PolarChart';
+import PolarAreaChart from './components/Charts/PolarArea/PolarAreaChart';
+import { options } from 'recharts'
 function App() {
  const ref = useRef();
   const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
   const FadeUp = batch(Fade(), Move(), Sticky());
+   const peek = {
+    labels: ['Farmgate', 'Rangs Bhaban', 'Jahangir Gate', 'Indira Road', 'Tejgaon', 'Bijoy Sarani', 'Khamar Bari'],
+    datasets: [
+      {
+        label: 'Sound Pressure Level dB:',
+        data: [110.5, 98.4, 120.2, 102.2, 105.5, 119.9, 106.5],
+        backgroundColor: [
+          'rgba(54, 162, 235, 0.6)',
+          'rgba(75, 192, 192, 0.6)',
+          'rgba(51, 0, 153, 0.5)',
+          'rgba(255, 99, 132, 0.6)',
+          'rgba(44, 44, 44, 0.6)',
+          'rgba(153, 102, 255, 0.6)',
+          'rgba(86, 86, 86, 0.6)',
+      ],
+      borderWidth: 1,
+      borderColor: 'transparent'
+    },
+  ],
+  };
+  const offPeek = {
+    labels: ['Farmgate', 'Rangs Bhaban', 'Jahangir Gate', 'Indira Road', 'Tejgaon', 'Bijoy Sarani', 'Khamar Bari'],
+    datasets: [
+      {
+        label: 'Sound Pressure Level dB:',
+        data: [81.2, 82.4, 90.5, 80.2, 74.2, 80.6, 75.7],
+        backgroundColor: [
+          'rgba(54, 162, 235, 0.6)',
+          'rgba(75, 192, 192, 0.6)',
+          'rgba(51, 0, 153, 0.5)',
+          'rgba(255, 99, 132, 0.6)',
+          'rgba(44, 44, 44, 0.6)',
+          'rgba(153, 102, 255, 0.6)',
+          'rgba(86, 86, 86, 0.6)',
+      ],
+      borderWidth: 1,
+      borderColor: 'transparent',
+    },
+  ],
+  };
 
   const handleClick = () => {
     console.log('inside handle click')
@@ -50,6 +94,51 @@ function App() {
   </div>
     </Animator>
   </ScrollPage>
+  <ScrollPage>
+    <Animator justifyContent="center" animation={batch(Fade(), Sticky(), MoveOut(0, -900))}>
+      
+  <div style={{width:'80vw', margin:'0 auto', }}>
+
+  <BarChart></BarChart>
+
+  </div>
+  
+    </Animator>
+  </ScrollPage>
+  <ScrollPage>
+    <Animator justifyContent="center" animation={batch(Fade(), Sticky(), MoveOut(0, -1000))}>
+  <div style={{width:'40vw', margin:'0 auto', display:'flex', flexDirection:'row', justifyContent: 'space-around', paddingTop:'80px', padding:'40px'}}>
+ <PolarAreaChart data={peek}></PolarAreaChart>
+ <PolarAreaChart data={offPeek}></PolarAreaChart>
+  </div>
+  <div style={{display: 'flex', flexDirection:'row', justifyContent:'space-between'}}>
+ <h2>Peek Hour</h2>
+ <h2>Off Peek Hour</h2>
+ </div>
+  
+    </Animator>
+  </ScrollPage>
+  <ScrollPage>
+    <Animator justifyContent="center" animation={batch(Fade(), Sticky(), MoveOut(0, -900))}>
+      
+  <div style={{width:'80vw', margin:'0 auto', }}>
+
+  <PieChart></PieChart>
+
+  </div>
+  
+    </Animator>
+  </ScrollPage>
+  {/* <ScrollPage>
+    <Animator justifyContent="center" animation={batch(Fade(), Sticky(), MoveOut(0, -900))}>
+      
+  <div style={{width:'80vw', margin:'0 auto', }}>
+
+ <PolarChart></PolarChart>
+  </div>
+  
+    </Animator>
+  </ScrollPage> */}
   
   <ScrollPage>
     <div ref={ref} style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }} >
@@ -159,7 +248,9 @@ function App() {
     </Animator>
   </ScrollPage>
 
+
 </ScrollContainer>
+   
 <Footer></Footer>
 {/* <CircularCarousel></CircularCarousel> */}
 {/* <Logo></Logo> */}

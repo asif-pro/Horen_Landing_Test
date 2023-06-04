@@ -8,7 +8,7 @@ const LeaderBoard = () => {
     <h1>Its a Noise Measuring Competition</h1>
         <div className='leftRanking'>
         <div id="header">
-<h2>Country Ranking</h2>
+<h2>Global Ranking</h2>
 {/* <button class="share">
   <i class="ph ph-share-network"></i>
 </button> */}
