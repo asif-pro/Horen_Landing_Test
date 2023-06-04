@@ -146,7 +146,7 @@ function App() {
         <span style={{display:"flex",justifyContent:"center"}}>
           <Animator animation={MoveIn(-1000, 0)}>
             <p  className="talk-bubble tri-right border round btm-right-in"
-            style={{position:"relative",marginRight:"10vw", maxWidth:"15vw",fontSize:"20px",wordWrap:"break-word"}}
+            style={{position:"relative",marginRight:"10vw", padding:"10px", maxWidth:"15vw",fontSize:"20px",wordWrap:"break-word"}}
              >
                 Horen is a platform that allows you to track your noise footprint
             </p>
@@ -174,7 +174,7 @@ function App() {
        
           <Animator animation={MoveOut(1000, 0)}>
           <p  className="talk-bubble tri-right border round top-left-in" 
-          style={{position:"relative",marginLeft:"10vw", minWidth:"15vw",fontSize:"20px",wordWrap:"break-word"}}>
+          style={{position:"relative",marginLeft:"10vw", minWidth:"15vw",padding:"10px",fontSize:"20px",wordWrap:"break-word"}}>
                  Make better noise decisions using an analytics dashboard and mobile app 
             </p>
           </Animator>

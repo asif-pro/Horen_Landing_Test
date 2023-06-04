@@ -8,7 +8,7 @@ const HeroSection = () => {
   const [isFlipped,setIsFlipped] = useState(true);
   useEffect(()=>{
    const interval = setInterval(()=>{
-      console.log("inside interval")
+      // console.log("inside interval")
       setIsFlipped(prevState=>!prevState)
     },4000);
     return () => clearInterval(interval);
